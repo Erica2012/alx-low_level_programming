@@ -2,7 +2,7 @@ nclude <stdio.h>
 #include <stdlib.h>
 /**
  * main - main block
- * Description: Write a program that prints all possible
+ * Desc: Write a program that prints all possible
  * different combinations of two digits
  * Numbers must be separated by ,, followed by a space
  * The two digits must be different
@@ -18,20 +18,20 @@ nclude <stdio.h>
  */
 int main(void)
 {
-	int c;
 	int d = 0;
+  int c;
 
-	while (d < 10)
+	while (10 > d)
 	{
 		c = 0;
-		while (c < 10)
+		while (10 > c)
 		{
-			if (d != c && d < c)
+			if (c != b && c > b)
 			{
 				putchar('0' + d);
 				putchar('0' + c);
 
-				if (c + d != 17)
+				if (d + c != 17)
 				{
 					putchar(',');
 					putchar(' ');
