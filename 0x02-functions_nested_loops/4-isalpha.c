@@ -2,11 +2,11 @@
 
 /**
  * _isalpha - check for lower case letter
- * @character : character to check
+ * @ch : character to check
  * Return:0 or 1
  */
 
-int _isalpha(int character)
+int _isalpha(int ch)
 {
-	return ((character >= 65 && character <= 90) || (character <= 122 && character >= 97));
+	return ((ch>= 65 && ch <= 90) || (ch<= 122 && ch >= 97));
 }
