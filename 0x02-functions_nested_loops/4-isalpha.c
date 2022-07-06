@@ -8,5 +8,5 @@
 
 int _isalpha(int ch)
 {
-	return ((ch>= 65 && ch <= 90) || (ch<= 122 && ch >= 97));
+	return ((ch >= 65 && ch <= 90) || (ch <= 122 && ch >= 97));
 }
