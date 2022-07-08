@@ -1,42 +1,37 @@
 #include "main.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: void.
+ * print_number - prints numbers
+ * @n: number to be printed
+ * Return:void
  */
 
-int main(void)
+void print_number(int n)
 {
 
-	int i = 1;
+	int d = 1, i = 0, ii = 0;
 
-	while (i <= 100)
+	if (n < 0)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("%i", i);
-		}
+		_putchar('-');
+		n = -n;
+	}
 
-		if (i != 100)
-		{
-			putchar(' ');
-		}
-
+	while (n / d != 0)
+	{
+		d *= 10;
 		i++;
 	}
-	putchar('\n');
-	return (0);
+	d = d / 10;
+
+	while (ii < i)
+	{
+		_putchar('0' + n / d);
+		n = n - (n / d) * d;
+		d = d / 10;
+		ii++;
+	}
+
+	if (i == 0)
+		_putchar('0' + n);
 
 }
